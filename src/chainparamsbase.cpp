@@ -10,6 +10,7 @@
 #include <util/memory.h>
 
 #include <assert.h>
+#include "COCO.h"
 
 const std::string CBaseChainParams::MAIN = "main";
 const std::string CBaseChainParams::TESTNET = "test";
@@ -34,11 +35,11 @@ const CBaseChainParams& BaseParams()
 std::unique_ptr<CBaseChainParams> CreateBaseChainParams(const std::string& chain)
 {
     if (chain == CBaseChainParams::MAIN)
-        return MakeUnique<CBaseChainParams>("", 9332);
+        return MakeUnique<CBaseChainParams>("", PORT1);
     else if (chain == CBaseChainParams::TESTNET)
-        return MakeUnique<CBaseChainParams>("testnet4", 19332);
+        return MakeUnique<CBaseChainParams>("testnet4", PORT2);
     else if (chain == CBaseChainParams::REGTEST)
-        return MakeUnique<CBaseChainParams>("regtest", 19443);
+        return MakeUnique<CBaseChainParams>("regtest", PORT3);
     else
         throw std::runtime_error(strprintf("%s: Unknown chain %s.", __func__, chain));
 }

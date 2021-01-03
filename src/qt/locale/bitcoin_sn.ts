@@ -90,8 +90,8 @@
         <translation>Vhura &amp;URI</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>ChocolateChip</source>
+        <translation>ChocolateChip</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -153,8 +153,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>ChocolateChip</source>
+        <translation>ChocolateChip</translation>
     </message>
     </context>
 <context>
@@ -182,8 +182,8 @@
         <translation>Marii </translation>
     </message>
     <message>
-        <source>Enter a Litecoin address (e.g. %1)</source>
-        <translation>Nyora kero ye Litecoin (sekuti %1)</translation>
+        <source>Enter a ChocolateChip address (e.g. %1)</source>
+        <translation>Nyora kero ye ChocolateChip (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
