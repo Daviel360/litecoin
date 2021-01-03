@@ -1,3 +1,6 @@
+#ifndef COCOINFO_H
+#define COCOINFO_H
+
 #define TOTALCOINS       100000000 //total coins 
 #define REWARD           60        //Mining rewards
 #define FPERCENT         0.03      // Founder's Percentage 
