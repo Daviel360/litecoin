@@ -47,6 +47,8 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/thread.hpp>
 
+#include "COCOinfo.h"
+
 #if defined(NDEBUG)
 # error "Litecoin cannot be compiled without assertions."
 #endif
@@ -1157,9 +1159,11 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     // Force block reward to zero when right shift is undefined.
     if (halvings >= 64)
         return 0;
-
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    if (nHeight == 1)
+        nSubsidy = (FPERCENT * TOTALCOINS) * COIN;
+    else 
+        CAmount nSubsidy = REWARD * COIN;
+    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years. [MODIFIED]
     nSubsidy >>= halvings;
     return nSubsidy;
 }
