@@ -26,5 +26,7 @@
 
 #define GEN_REGTEST_Hash "0xe050cd2b0ceedd63c2302fda689964e81a6b2647abb4b8b9ec7fb39d9897caa1"
 
-#define SERVERIP_1       ""     //Running Default node 
+#define SERVERIP_1       "3.15.34.237"     //Running Default node 
 //bitcoinunits.cpp is modded and not linked to this file 
+
+#endif 

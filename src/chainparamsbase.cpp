@@ -10,7 +10,7 @@
 #include <util/memory.h>
 
 #include <assert.h>
-#include "COCO.h"
+#include "COCOinfo.h"
 
 const std::string CBaseChainParams::MAIN = "main";
 const std::string CBaseChainParams::TESTNET = "test";
